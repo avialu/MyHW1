@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#FF9800</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="MyHW1Theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
+</resources>

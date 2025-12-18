@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_ROOT"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:id="@+id/main_LNL_hearts"
@@ -17,30 +18,31 @@
 
         <ImageView
             android:id="@+id/main_IMG_heart1"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:src="@drawable/ic_heart"
             android:layout_marginEnd="8dp"/>
 
         <ImageView
             android:id="@+id/main_IMG_heart2"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:src="@drawable/ic_heart"
             android:layout_marginEnd="8dp"/>
 
         <ImageView
             android:id="@+id/main_IMG_heart3"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:src="@drawable/ic_heart"/>
     </LinearLayout>
+
 
     <GridLayout
         android:id="@+id/main_GRID_lanes"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#202020"
+        android:background="#FFFFFF"
         android:useDefaultMargins="false"
         app:layout_constraintTop_toBottomOf="@id/main_LNL_hearts"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,22 +52,25 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/main_FAB_left"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="Left"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:contentDescription="Move Left"
         app:srcCompat="@android:drawable/ic_media_previous"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        app:backgroundTint="#FF5722" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/main_FAB_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="Right"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:contentDescription="Move Right"
         app:srcCompat="@android:drawable/ic_media_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        app:backgroundTint="#FF5722" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
